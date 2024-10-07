@@ -8,6 +8,8 @@ async function testRun() {
     // await driver.findElement(By.className("search-icon")).click();
     await driver.findElement(By.xpath("//a[@class='search-icon']")).click();
     await driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("nike");
+    //add to cart added
+    console.log("show my cart")
     // await driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("nike",Key.ENTER);
     await driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys(Key.ENTER);
     await driver.findElement(By.xpath(`//a[contains(@href,'182')]/span[contains(text(),'${productName}')]`)).click();
